@@ -61,13 +61,13 @@
   }
   .nav-title span:first-child {
     font-family: 'Cinzel', serif;
-    font-size: 14px; font-weight: 600;
+    font-size: 16px; font-weight: 700;
     color: var(--gold-light);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.06em;
   }
   .nav-title span:last-child {
     font-family: 'Noto Sans Gurmukhi', sans-serif;
-    font-size: 11px; color: rgba(245,230,200,0.7);
+    font-size: 13px; color: rgba(245,230,200,0.9);
     letter-spacing: 0.05em;
   }
   .nav-links {
@@ -145,7 +145,7 @@
     font-family: 'Cinzel', serif;
     font-size: clamp(36px, 7vw, 80px);
     font-weight: 700;
-    color: #1A1428;
+    color: #000000;
     line-height: 1.05;
     letter-spacing: 0.02em;
     margin-bottom: 12px;
@@ -155,7 +155,7 @@
   .hero-subtitle {
     font-family: 'Cinzel', serif;
     font-size: clamp(14px, 2.5vw, 20px);
-    color: rgba(80,60,30,0.6);
+    color: #111111;
     letter-spacing: 0.3em; text-transform: uppercase;
     margin-bottom: 32px;
     animation: heroFadeUp 1.2s 0.3s ease both;
@@ -170,7 +170,7 @@
   .hero-verse {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic; font-size: clamp(16px, 2.5vw, 22px);
-    color: rgba(60,45,20,0.75); line-height: 1.7;
+    color: #111111; line-height: 1.7;
     max-width: 640px; margin: 0 auto 48px;
     animation: heroFadeUp 1.2s 0.4s ease both;
   }
@@ -199,7 +199,7 @@
   .hero-scroll {
     position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
     display: flex; flex-direction: column; align-items: center; gap: 8px;
-    color: rgba(80,60,20,0.45); font-size: 11px; letter-spacing: 0.15em;
+    color: #111111; font-size: 11px; letter-spacing: 0.15em;
     text-transform: uppercase; animation: bounce 2s infinite;
   }
   @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
@@ -564,7 +564,7 @@
   .kirtan-placeholder svg { width: 56px; fill: rgba(176,120,24,0.5); margin-bottom: 16px; }
   .kirtan-placeholder p {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px; color: #333333; font-weight: 500;
+    font-size: 18px; color: #111111; font-weight: 500;
   }
   .kirtan-status {
     display: flex; align-items: center; gap: 8px;
@@ -575,7 +575,7 @@
     background: #ef4444; animation: pulse 1.5s infinite;
   }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-  .live-label { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: #333333; font-weight: 500; }
+  .live-label { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: #111111; font-weight: 500; }
 
   /* ── DONATION ── */
   #donate { background: var(--warm-white); }
@@ -1641,18 +1641,18 @@
       <div style="background:#fff;border:1px solid var(--border);border-radius:4px;padding:24px">
         <h4 style="font-family:'Cinzel',serif;font-size:14px;font-weight:600;color:#111;letter-spacing:0.08em;margin-bottom:16px">CLASS SCHEDULE</h4>
         <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px">
-          <span style="color:#444;font-weight:500">Saturday Morning</span>
+          <span style="color:#111;font-weight:500">Saturday Morning</span>
           <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold)">9:00 – 11:00 AM</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px">
-          <span style="color:#444;font-weight:500">Sunday (After Diwan)</span>
+          <span style="color:#111;font-weight:500">Sunday (After Diwan)</span>
           <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold)">12:30 – 2:00 PM</span>
         </div>
         <div style="display:flex;justify-content:space-between;padding:10px 0;font-size:14px">
-          <span style="color:#444;font-weight:500">Location</span>
+          <span style="color:#111;font-weight:500">Location</span>
           <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold)">Classroom — Lower Hall</span>
         </div>
-        <p style="font-size:13px;color:#333;margin-top:12px;font-style:italic">Classes are free of charge. Donations for supplies are welcome.</p>
+        <p style="font-size:13px;color:#111;margin-top:12px;font-style:italic">Classes are free of charge. Donations for supplies are welcome.</p>
       </div>
     </div>
 
@@ -1746,7 +1746,7 @@
       <div class="success-msg" id="gurmukhiSuccess">
         ✓ Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh! Your enrollment has been received. Our Gurmukhi teacher will contact you within 48 hours with class details.
       </div>
-      <p style="font-size:12px;color:#333;margin-top:14px;text-align:center">
+      <p style="font-size:12px;color:#111;margin-top:14px;text-align:center">
         Classes are <strong>free of charge</strong> · Open to all children · No prior knowledge required
       </p>
     </div>
