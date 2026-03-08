@@ -10,18 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cinzel:wght@400;600;700&family=Noto+Sans+Gurmukhi:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --gold: #C9922A;
-    --gold-light: #E8B84B;
+    --gold: #B07818;
+    --gold-light: #C9922A;
     --gold-pale: #FBF2DF;
-    --deep-blue: #1E1A2E;
-    --navy: #2A2540;
-    --cream: #F8F4EE;
-    --warm-white: #FDFCF8;
-    --text-dark: #1A1A1A;
-    --text-mid: #444444;
-    --text-light: #777777;
-    --border: rgba(201,146,42,0.28);
-    --shadow: 0 8px 48px rgba(20,16,40,0.14);
+    --deep-blue: #1A1428;
+    --navy: #2A2040;
+    --cream: #F5F0E8;
+    --warm-white: #FFFFFF;
+    --text-dark: #111111;
+    --text-mid: #333333;
+    --text-light: #666666;
+    --border: rgba(176,120,24,0.22);
+    --shadow: 0 4px 32px rgba(0,0,0,0.08);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,7 +30,7 @@
 
   body {
     font-family: 'Inter', sans-serif;
-    background: var(--warm-white);
+    background: #FFFFFF;
     color: var(--text-dark);
     overflow-x: hidden;
   }
@@ -43,7 +43,7 @@
   /* ── NAV ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-    background: rgba(22,18,38,0.97);
+    background: rgba(26, 20, 40, 0.97);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid rgba(201,146,42,0.3);
     padding: 0 5%;
@@ -112,12 +112,12 @@
   .hero-bg {
     position: absolute; inset: 0;
     background:
-      radial-gradient(ellipse 80% 60% at 50% 40%, rgba(201,146,42,0.16) 0%, transparent 65%),
-      radial-gradient(ellipse 40% 50% at 80% 20%, rgba(201,146,42,0.08) 0%, transparent 60%),
-      linear-gradient(160deg, #12101E 0%, #1E1828 50%, #12101E 100%);
+      radial-gradient(ellipse 80% 60% at 50% 40%, rgba(176,120,24,0.12) 0%, transparent 65%),
+      radial-gradient(ellipse 40% 50% at 80% 20%, rgba(176,120,24,0.07) 0%, transparent 60%),
+      linear-gradient(160deg, #F5F0E8 0%, #EDE5D8 50%, #F5F0E8 100%);
   }
   .hero-pattern {
-    position: absolute; inset: 0; opacity: 0.08;
+    position: absolute; inset: 0; opacity: 0.06;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C9922A' fill-rule='evenodd'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3Ccircle cx='0' cy='0' r='1'/%3E%3Ccircle cx='60' cy='0' r='1'/%3E%3Ccircle cx='0' cy='60' r='1'/%3E%3Ccircle cx='60' cy='60' r='1'/%3E%3C/g%3E%3C/svg%3E");
   }
   .hero-content {
@@ -134,7 +134,7 @@
   .hero-badge {
     display: inline-block;
     font-family: 'Noto Sans Gurmukhi', sans-serif;
-    font-size: 22px; color: var(--gold-light);
+    font-size: 22px; color: var(--gold);
     letter-spacing: 0.12em;
     margin-bottom: 24px;
     animation: heroFadeUp 1.2s 0.1s ease both;
@@ -143,7 +143,7 @@
     font-family: 'Cinzel', serif;
     font-size: clamp(36px, 7vw, 80px);
     font-weight: 700;
-    color: var(--cream);
+    color: #1A1428;
     line-height: 1.05;
     letter-spacing: 0.02em;
     margin-bottom: 12px;
@@ -153,7 +153,7 @@
   .hero-subtitle {
     font-family: 'Cinzel', serif;
     font-size: clamp(14px, 2.5vw, 20px);
-    color: rgba(245,230,200,0.6);
+    color: rgba(80,60,30,0.6);
     letter-spacing: 0.3em; text-transform: uppercase;
     margin-bottom: 32px;
     animation: heroFadeUp 1.2s 0.3s ease both;
@@ -163,12 +163,12 @@
     justify-content: center; margin-bottom: 32px;
     animation: heroFadeUp 1.2s 0.35s ease both;
   }
-  .hero-divider-line { height: 1px; width: 80px; background: var(--gold); opacity: 0.5; }
+  .hero-divider-line { height: 1px; width: 80px; background: var(--gold); opacity: 0.6; }
   .hero-divider-khanda { width: 28px; fill: var(--gold); opacity: 0.8; }
   .hero-verse {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic; font-size: clamp(16px, 2.5vw, 22px);
-    color: rgba(245,230,200,0.75); line-height: 1.7;
+    color: rgba(60,45,20,0.75); line-height: 1.7;
     max-width: 640px; margin: 0 auto 48px;
     animation: heroFadeUp 1.2s 0.4s ease both;
   }
@@ -190,14 +190,14 @@
   .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,146,42,0.35); }
   .btn-outline {
     background: transparent;
-    border: 1.5px solid rgba(201,146,42,0.6);
-    color: var(--gold-light);
+    border: 1.5px solid rgba(176,120,24,0.7);
+    color: var(--gold);
   }
-  .btn-outline:hover { background: rgba(201,146,42,0.1); border-color: var(--gold); }
+  .btn-outline:hover { background: rgba(176,120,24,0.1); border-color: var(--gold); }
   .hero-scroll {
     position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
     display: flex; flex-direction: column; align-items: center; gap: 8px;
-    color: rgba(245,230,200,0.4); font-size: 11px; letter-spacing: 0.15em;
+    color: rgba(80,60,20,0.45); font-size: 11px; letter-spacing: 0.15em;
     text-transform: uppercase; animation: bounce 2s infinite;
   }
   @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
@@ -261,7 +261,7 @@
   }
   .about-image-frame {
     width: 100%; aspect-ratio: 4/3;
-    background: #0E0C1A;
+    background: #F5F0E8;
     border-radius: 4px;
     display: flex; align-items: center; justify-content: center;
     position: relative; overflow: hidden;
@@ -283,7 +283,7 @@
   }
   .about-year {
     position: absolute; top: -16px; left: -16px;
-    background: #0E0C1A;
+    background: #1A1428;
     border: 1px solid var(--gold);
     padding: 12px 20px; border-radius: 4px;
   }
@@ -330,16 +330,16 @@
   }
 
   /* ── TIMINGS ── */
-  #services { background: #161228; }
-  #services .section-title { color: var(--cream); }
-  #services .section-desc { color: rgba(245,230,200,0.6); }
+  #services { background: #F5F0E8; }
+  #services .section-title { color: #1A1428; }
+  #services .section-desc { color: #555555; }
   .timings-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 24px; max-width: 1200px; margin: 0 auto;
   }
   .timing-card {
-    background: rgba(245,230,200,0.04);
-    border: 1px solid rgba(201,146,42,0.2);
+    background: #FFFFFF;
+    border: 1px solid rgba(176,120,24,0.2);
     border-radius: 4px; padding: 32px 28px;
     transition: all 0.3s;
     position: relative; overflow: hidden;
@@ -351,7 +351,7 @@
     transition: transform 0.3s;
   }
   .timing-card:hover::before { transform: scaleX(1); }
-  .timing-card:hover { background: rgba(201,146,42,0.07); transform: translateY(-4px); }
+  .timing-card:hover { background: #FBF2DF; transform: translateY(-4px); }
   .timing-day {
     font-family: 'Cinzel', serif; font-size: 11px;
     font-weight: 600; letter-spacing: 0.2em;
@@ -360,20 +360,20 @@
   }
   .timing-name {
     font-family: 'Cinzel', serif; font-size: 20px;
-    font-weight: 700; color: var(--cream); margin-bottom: 4px;
+    font-weight: 700; color: #1A1428; margin-bottom: 4px;
   }
   .timing-gurmukhi {
     font-family: 'Noto Sans Gurmukhi', sans-serif;
-    font-size: 15px; color: rgba(245,230,200,0.5);
+    font-size: 15px; color: var(--gold);
     margin-bottom: 16px;
   }
   .timing-time {
     font-family: 'Cormorant Garamond', serif;
     font-size: 26px; font-weight: 300;
-    color: var(--gold-light); margin-bottom: 8px;
+    color: var(--gold); margin-bottom: 8px;
   }
   .timing-desc {
-    font-size: 13px; color: rgba(245,230,200,0.5);
+    font-size: 13px; color: #666666;
     line-height: 1.6;
   }
 
@@ -390,7 +390,7 @@
   }
   .event-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
   .event-date-col {
-    background: #1E1A2E;
+    background: #1A1428;
     padding: 24px 20px; text-align: center;
     display: flex; flex-direction: column;
     align-items: center; justify-content: center;
@@ -529,9 +529,9 @@
   .form-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
 
   /* ── LIVE KIRTAN ── */
-  #kirtan { background: #131120; }
-  #kirtan .section-title { color: var(--cream); }
-  #kirtan .section-desc { color: rgba(245,230,200,0.6); }
+  #kirtan { background: #EEE8F8; }
+  #kirtan .section-title { color: #000000; }
+  #kirtan .section-desc { color: #555555; }
   .kirtan-container { max-width: 900px; margin: 0 auto; }
   .kirtan-tabs {
     display: flex; gap: 8px; margin-bottom: 28px; justify-content: center;
@@ -541,17 +541,17 @@
     font-family: 'Inter', sans-serif; font-size: 12px;
     font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
     cursor: pointer; transition: all 0.2s;
-    border: 1.5px solid rgba(201,146,42,0.3);
-    color: rgba(245,230,200,0.6); background: transparent;
+    border: 1.5px solid rgba(176,120,24,0.6);
+    color: #1A1428; background: #FFFFFF;
   }
   .tab-btn.active {
-    background: var(--gold); color: var(--deep-blue);
-    border-color: var(--gold);
+    background: var(--gold); color: #111111;
+    border-color: var(--gold); font-weight: 700;
   }
   .kirtan-frame {
     width: 100%; aspect-ratio: 16/9;
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(201,146,42,0.2);
+    background: #FAFAFA;
+    border: 2px solid rgba(176,120,24,0.3);
     border-radius: 4px; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
   }
@@ -559,10 +559,10 @@
   .kirtan-placeholder {
     text-align: center; padding: 60px 40px;
   }
-  .kirtan-placeholder svg { width: 56px; fill: rgba(201,146,42,0.3); margin-bottom: 16px; }
+  .kirtan-placeholder svg { width: 56px; fill: rgba(176,120,24,0.5); margin-bottom: 16px; }
   .kirtan-placeholder p {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px; color: rgba(245,230,200,0.4);
+    font-size: 18px; color: #333333; font-weight: 500;
   }
   .kirtan-status {
     display: flex; align-items: center; gap: 8px;
@@ -573,7 +573,7 @@
     background: #ef4444; animation: pulse 1.5s infinite;
   }
   @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-  .live-label { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(245,230,200,0.5); }
+  .live-label { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: #333333; font-weight: 500; }
 
   /* ── DONATION ── */
   #donate { background: var(--warm-white); }
@@ -657,22 +657,22 @@
   .gallery-item svg { width: 48px; fill: rgba(201,146,42,0.2); }
   .gallery-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(13,27,42,0.8) 0%, transparent 60%);
+    background: linear-gradient(to top, rgba(26,20,40,0.85) 0%, transparent 60%);
     opacity: 0; transition: opacity 0.3s;
     display: flex; align-items: flex-end; padding: 20px;
   }
   .gallery-item:hover .gallery-overlay { opacity: 1; }
   .gallery-overlay span {
     font-family: 'Cinzel', serif; font-size: 13px;
-    font-weight: 600; color: var(--gold-light);
+    font-weight: 600; color: #FFFFFF;
     letter-spacing: 0.08em;
   }
 
   /* ── VOLUNTEER ── */
-  #volunteer { background: #161228; position: relative; overflow: hidden; }
+  #volunteer { background: #EEE8F8; position: relative; overflow: hidden; }
   .volunteer-bg {
     position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 60% at 70% 50%, rgba(201,146,42,0.10) 0%, transparent 70%);
+    background: radial-gradient(ellipse 60% 60% at 70% 50%, rgba(176,120,24,0.08) 0%, transparent 70%);
   }
   .volunteer-wrap {
     position: relative; max-width: 960px; margin: 0 auto;
@@ -680,27 +680,27 @@
   }
   .volunteer-info h3 {
     font-family: 'Cinzel', serif; font-size: 26px;
-    font-weight: 700; color: var(--cream); margin-bottom: 16px;
+    font-weight: 700; color: #1A1428; margin-bottom: 16px;
   }
   .volunteer-info p {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 18px; color: rgba(245,230,200,0.7); line-height: 1.8; margin-bottom: 28px;
+    font-size: 18px; color: #444444; line-height: 1.8; margin-bottom: 28px;
   }
   .seva-areas {
     display: flex; flex-wrap: wrap; gap: 8px;
   }
   .seva-tag {
     padding: 6px 14px; border-radius: 100px;
-    border: 1px solid rgba(201,146,42,0.3);
-    font-size: 12px; color: rgba(245,230,200,0.6);
+    border: 1px solid rgba(176,120,24,0.3);
+    font-size: 12px; color: #555555;
     font-weight: 500;
   }
-  #volunteer .donate-form { background: rgba(245,230,200,0.05); border-color: rgba(201,146,42,0.2); }
+  #volunteer .donate-form { background: #FFFFFF; border-color: rgba(176,120,24,0.2); }
   #volunteer .form-input, #volunteer .form-select, #volunteer .form-textarea {
-    background: rgba(245,230,200,0.07); border-color: rgba(201,146,42,0.2);
-    color: var(--cream);
+    background: #F8F4EE; border-color: rgba(176,120,24,0.2);
+    color: #111111;
   }
-  #volunteer .form-label { color: rgba(245,230,200,0.6); }
+  #volunteer .form-label { color: #444444; }
 
   /* ── CONTACT ── */
   #contact { background: var(--warm-white); }
@@ -760,8 +760,8 @@
 
   /* ── FOOTER ── */
   footer {
-    background: #0E0C1A;
-    border-top: 1px solid rgba(201,146,42,0.25);
+    background: #1A1428;
+    border-top: 1px solid rgba(176,120,24,0.25);
     padding: 64px 5% 32px;
   }
   .footer-grid {
@@ -788,8 +788,8 @@
   .footer-col ul li a:hover { color: var(--gold-light); }
   .footer-newsletter input {
     width: 100%; padding: 10px 14px;
-    background: rgba(245,230,200,0.07);
-    border: 1px solid rgba(201,146,42,0.2); border-radius: 4px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(176,120,24,0.25); border-radius: 4px;
     color: var(--cream); font-size: 13px; outline: none; margin-bottom: 10px;
   }
   .footer-newsletter button {
@@ -834,7 +834,7 @@
   /* ── MOBILE ── */
   .mobile-menu {
     display: none; position: fixed; inset: 0; z-index: 999;
-    background: #0E0C1A; padding: 100px 5% 40px;
+    background: #1A1428; padding: 100px 5% 40px;
     flex-direction: column; gap: 8px;
   }
   .mobile-menu.open { display: flex; }
@@ -900,13 +900,13 @@
   </a>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#events">Events</a></li>
     <li><a href="#bookings">Bookings</a></li>
     <li><a href="#kirtan">Live Kirtan</a></li>
     <li><a href="#volunteer">Seva</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#gurmukhi">Gurmukhi Classes</a></li>
     <li><a href="#donate" class="nav-donate-btn">Donate</a></li>
   </ul>
   <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
@@ -917,7 +917,6 @@
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#home" onclick="toggleMobile()">Home</a>
-  <a href="#about" onclick="toggleMobile()">About</a>
   <a href="#services" onclick="toggleMobile()">Services & Timings</a>
   <a href="#events" onclick="toggleMobile()">Events</a>
   <a href="#bookings" onclick="toggleMobile()">Program Bookings</a>
@@ -925,6 +924,7 @@
   <a href="#donate" onclick="toggleMobile()">Donate</a>
   <a href="#volunteer" onclick="toggleMobile()">Volunteer / Seva</a>
   <a href="#contact" onclick="toggleMobile()">Contact</a>
+  <a href="#gurmukhi" onclick="toggleMobile()">Gurmukhi Classes</a>
 </div>
 
 <!-- HERO -->
@@ -1258,7 +1258,7 @@
 <section id="kirtan">
   <div class="section-header">
     <span class="section-label">Tune In</span>
-    <h2 class="section-title" style="color:var(--cream)">Live & Recorded Kirtan</h2>
+    <h2 class="section-title" style="color:#000000">Live & Recorded Kirtan</h2>
     <p class="section-desc">Listen to the divine Shabads from wherever you are in the world.</p>
     <div class="gold-line"></div>
   </div>
@@ -1270,7 +1270,7 @@
     <div class="kirtan-frame">
       <div class="kirtan-placeholder" id="kirtan-placeholder">
         <svg viewBox="0 0 100 100"><path d="M50 10L90 50L50 90L10 50Z" opacity="0.5"/><path d="M40 35L70 50L40 65Z"/></svg>
-        <p>Live Kirtan stream will appear here during Diwan.<br>Check back on <strong style="color:var(--gold)">Sundays 9 AM – 12 PM</strong></p>
+        <p>Live Kirtan stream will appear here during Diwan.<br>Check back on <strong style="color:#B07818;font-weight:700">Sundays 9 AM – 12 PM</strong></p>
       </div>
       <iframe id="kirtan-frame-youtube"
         src="https://www.youtube.com/embed/live_stream?channel=UCm55xfUhEt3H3HHBH-yb1yA&autoplay=0"
@@ -1363,31 +1363,31 @@
     <div class="gold-line"></div>
   </div>
   <div class="gallery-grid" style="max-width:1200px;margin:0 auto">
-    <div class="gallery-item" style="background:linear-gradient(135deg,#1E1A2E,#2A2040)">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#E8E0F5,#D8D0EC)">
       <svg viewBox="0 0 100 100"><path d="M50 10L90 50L50 90L10 50Z" opacity="0.3"/><path d="M40 35L70 50L40 65Z" opacity="0.5"/></svg>
       <div class="gallery-overlay"><span>Sunday Diwan Kirtan</span></div>
     </div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#251E10,#3A2A10)">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#EDE8F8,#DDD8F0)">
       <svg viewBox="0 0 100 100"><path d="M50 20C30 20 15 35 15 55C15 75 30 85 50 85C70 85 85 75 85 55C85 35 70 20 50 20Z" opacity="0.3"/></svg>
       <div class="gallery-overlay"><span>Langar Seva</span></div>
     </div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#1A1830,#20201A)">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#E0DCF2,#D0CCE8)">
       <svg viewBox="0 0 100 100"><rect x="20" y="20" width="60" height="60" rx="4" opacity="0.3"/></svg>
       <div class="gallery-overlay"><span>Baisakhi 2024</span></div>
     </div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#201A30,#2A2010)">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#EAE4F8,#DAD4F0)">
       <svg viewBox="0 0 100 100"><path d="M50 10L53 45L60 45L50 90L40 45L47 45Z" opacity="0.3"/></svg>
       <div class="gallery-overlay"><span>Nagar Kirtan</span></div>
     </div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#241420,#381820)">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#E8E0F8,#E0D8F5)">
       <svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" opacity="0.3" fill="none" stroke="currentColor" stroke-width="3"/></svg>
       <div class="gallery-overlay"><span>Anand Karaj</span></div>
     </div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#14201A,#1E2818)">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#DDD8F0,#CCC8E8)">
       <svg viewBox="0 0 100 100"><path d="M20 80L50 20L80 80Z" opacity="0.3"/></svg>
       <div class="gallery-overlay"><span>Youth Kirtan</span></div>
     </div>
-    <div class="gallery-item" style="background:linear-gradient(135deg,#201A10,#302010)">
+    <div class="gallery-item" style="background:linear-gradient(135deg,#E5E0F5,#D5D0EC)">
       <svg viewBox="0 0 100 100"><path d="M30 50Q50 20 70 50Q50 80 30 50Z" opacity="0.3"/></svg>
       <div class="gallery-overlay"><span>Guru Nanak Gurpurab</span></div>
     </div>
@@ -1420,7 +1420,7 @@
       </div>
     </div>
     <div class="donate-form" style="background:rgba(245,230,200,0.05);border-color:rgba(201,146,42,0.2)">
-      <div class="modal-title" style="color:var(--cream);margin-bottom:4px">Volunteer Form</div>
+      <div class="modal-title" style="color:#1A1428;margin-bottom:4px">Volunteer Form</div>
       <div class="modal-subtitle">ਸੇਵਾ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ</div>
       <div class="form-row">
         <div class="form-group">
@@ -1562,6 +1562,169 @@
   </div>
 </section>
 
+<!-- GURMUKHI CLASSES -->
+<section id="gurmukhi" style="background:#F8F4EE; padding:100px 5%">
+  <div class="section-header">
+    <span class="section-label">Education & Heritage</span>
+    <h2 class="section-title" style="color:#111111">Gurmukhi Classes</h2>
+    <p class="section-desc" style="color:#555555">Connect your children to their roots. Learn to read and write the sacred script of Gurbani.</p>
+    <div class="gold-line"></div>
+  </div>
+
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start">
+
+    <!-- LEFT: Info -->
+    <div>
+      <h3 style="font-family:'Cinzel',serif;font-size:26px;font-weight:700;color:#111111;margin-bottom:8px">ਗੁਰਮੁਖੀ ਸਿੱਖੋ</h3>
+      <p style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:16px;color:var(--gold);margin-bottom:24px">Learn the Language of the Guru</p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#444444;line-height:1.8;margin-bottom:16px">
+        Our Gurmukhi classes are designed to help children of all ages learn to read, write, and understand the sacred script used in Sri Guru Granth Sahib Ji. Classes are taught by experienced Gursikh teachers in a warm, nurturing environment.
+      </p>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:18px;color:#444444;line-height:1.8;margin-bottom:32px">
+        Whether your child is a complete beginner or wants to advance their reading of Gurbani, we have a class that fits. All Sangat families are welcome regardless of background.
+      </p>
+
+      <!-- Class levels -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px">
+        <div style="background:#fff;border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:4px;padding:20px">
+          <div style="font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:#111;margin-bottom:4px">Beginner</div>
+          <div style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:13px;color:var(--gold);margin-bottom:8px">ਮੁੱਢਲਾ</div>
+          <div style="font-size:13px;color:#666;line-height:1.5">Ages 5–8 · Learn the Gurmukhi alphabet (Painti), vowels, and basic words</div>
+        </div>
+        <div style="background:#fff;border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:4px;padding:20px">
+          <div style="font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:#111;margin-bottom:4px">Intermediate</div>
+          <div style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:13px;color:var(--gold);margin-bottom:8px">ਵਿਚਕਾਰਲਾ</div>
+          <div style="font-size:13px;color:#666;line-height:1.5">Ages 9–13 · Reading Nitnem Banis, understanding basic meanings</div>
+        </div>
+        <div style="background:#fff;border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:4px;padding:20px">
+          <div style="font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:#111;margin-bottom:4px">Advanced</div>
+          <div style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:13px;color:var(--gold);margin-bottom:8px">ਉੱਚ ਪੱਧਰ</div>
+          <div style="font-size:13px;color:#666;line-height:1.5">Ages 14+ · Full Gurbani reading, pronunciation & comprehension</div>
+        </div>
+        <div style="background:#fff;border:1px solid var(--border);border-left:3px solid var(--gold);border-radius:4px;padding:20px">
+          <div style="font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:#111;margin-bottom:4px">Adult Classes</div>
+          <div style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:13px;color:var(--gold);margin-bottom:8px">ਵੱਡਿਆਂ ਲਈ</div>
+          <div style="font-size:13px;color:#666;line-height:1.5">All ages welcome · Weekend sessions for adults who want to learn</div>
+        </div>
+      </div>
+
+      <!-- Schedule info -->
+      <div style="background:#fff;border:1px solid var(--border);border-radius:4px;padding:24px">
+        <h4 style="font-family:'Cinzel',serif;font-size:14px;font-weight:600;color:#111;letter-spacing:0.08em;margin-bottom:16px">CLASS SCHEDULE</h4>
+        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px">
+          <span style="color:#444;font-weight:500">Saturday Morning</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold)">9:00 – 11:00 AM</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--border);font-size:14px">
+          <span style="color:#444;font-weight:500">Sunday (After Diwan)</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold)">12:30 – 2:00 PM</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;padding:10px 0;font-size:14px">
+          <span style="color:#444;font-weight:500">Location</span>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:15px;color:var(--gold)">Classroom — Lower Hall</span>
+        </div>
+        <p style="font-size:13px;color:#888;margin-top:12px;font-style:italic">Classes are free of charge. Donations for supplies are welcome.</p>
+      </div>
+    </div>
+
+    <!-- RIGHT: Enrollment Form -->
+    <div style="background:#fff;border:1px solid var(--border);border-radius:4px;padding:40px 36px;box-shadow:var(--shadow)">
+      <div style="font-family:'Cinzel',serif;font-size:22px;font-weight:700;color:#111;margin-bottom:4px">Enroll Your Child</div>
+      <div style="font-family:'Noto Sans Gurmukhi',sans-serif;font-size:14px;color:var(--gold);margin-bottom:28px">ਦਾਖਲਾ ਫਾਰਮ</div>
+
+      <!-- Parent Info -->
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid var(--border)">Parent / Guardian Information</div>
+
+      <div class="form-row" style="margin-bottom:0">
+        <div class="form-group">
+          <label class="form-label">Parent First Name</label>
+          <input type="text" class="form-input" placeholder="Gurpreet">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Parent Last Name</label>
+          <input type="text" class="form-input" placeholder="Singh / Kaur">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-input" placeholder="parent@email.com">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-input" placeholder="(407) 000-0000">
+      </div>
+
+      <!-- Child Info -->
+      <div style="font-size:11px;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;margin-top:8px;padding-bottom:8px;border-bottom:1px solid var(--border)">Child Information</div>
+
+      <div class="form-row" style="margin-bottom:0">
+        <div class="form-group">
+          <label class="form-label">Child's First Name</label>
+          <input type="text" class="form-input" placeholder="Simran">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Child's Last Name</label>
+          <input type="text" class="form-input" placeholder="Singh / Kaur">
+        </div>
+      </div>
+      <div class="form-row" style="margin-bottom:0">
+        <div class="form-group">
+          <label class="form-label">Date of Birth</label>
+          <input type="date" class="form-input">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Age</label>
+          <input type="number" class="form-input" placeholder="e.g. 8" min="4" max="99">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Current Gurmukhi Level</label>
+        <select class="form-select">
+          <option value="">— Select level —</option>
+          <option>Complete Beginner — Never studied Gurmukhi</option>
+          <option>Beginner — Knows some letters (Painti)</option>
+          <option>Intermediate — Can read slowly, needs practice</option>
+          <option>Advanced — Reads Gurbani, wants to improve</option>
+          <option>Adult Learner</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Preferred Class Day</label>
+        <select class="form-select">
+          <option value="">— Select preference —</option>
+          <option>Saturday 9:00 – 11:00 AM</option>
+          <option>Sunday 12:30 – 2:00 PM</option>
+          <option>Either day works</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Number of Children Enrolling</label>
+        <select class="form-select">
+          <option>1 child</option>
+          <option>2 children</option>
+          <option>3 children</option>
+          <option>4 or more</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Any Special Notes or Requests</label>
+        <textarea class="form-textarea" placeholder="E.g. allergies, special needs, sibling names, previous learning experience..."></textarea>
+      </div>
+
+      <button class="form-submit" onclick="submitGurmukhi()" style="margin-top:4px">
+        🙏 Submit Enrollment — Waheguru Bless
+      </button>
+      <div class="success-msg" id="gurmukhiSuccess">
+        ✓ Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh! Your enrollment has been received. Our Gurmukhi teacher will contact you within 48 hours with class details.
+      </div>
+      <p style="font-size:12px;color:#888;margin-top:14px;text-align:center">
+        Classes are <strong>free of charge</strong> · Open to all children · No prior knowledge required
+      </p>
+    </div>
+
+  </div>
+</section>
+
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
@@ -1660,6 +1823,9 @@
   }
   function submitVolunteer() {
     document.getElementById('volunteerSuccess').classList.add('show');
+  }
+  function submitGurmukhi() {
+    document.getElementById('gurmukhiSuccess').classList.add('show');
   }
   function submitContact() {
     document.getElementById('contactSuccess').classList.add('show');
